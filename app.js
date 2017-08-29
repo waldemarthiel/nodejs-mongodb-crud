@@ -7,9 +7,11 @@ var express = require('express')
   , user = require('./routes/user')
   , http = require('http')
   , path = require('path')
-  , EmployeeProvider = require('./employeeprovider').EmployeeProvider;
+  , EmployeeProvider = require('./employeeprovider').EmployeeProvider,
+  , os = require('os');
 
 var app = express();
+var hostname = os.hostname();
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
