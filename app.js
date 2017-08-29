@@ -40,6 +40,7 @@ app.get('/', function(req, res){
   employeeProvider.findAll(function(error, emps){
       res.render('index', {
             title: 'Employees',
+	    hostname:hostname,
             employees:emps
         });
   });
