@@ -7,7 +7,7 @@ var express = require('express')
   , user = require('./routes/user')
   , http = require('http')
   , path = require('path')
-  , EmployeeProvider = require('./employeeprovider').EmployeeProvider,
+  , EmployeeProvider = require('./employeeprovider').EmployeeProvider
   , os = require('os');
 
 var app = express();
